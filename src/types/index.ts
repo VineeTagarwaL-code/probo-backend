@@ -3,4 +3,11 @@ type TConfigProp = {
   PORT: number;
 };
 
-export { TConfigProp };
+type TInrBalances = {
+  [key: string]: {
+    balance: string;
+    currency: string;
+  };
+};
+
+export { TConfigProp, TInrBalances };
